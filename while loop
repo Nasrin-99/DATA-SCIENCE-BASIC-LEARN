@@ -1,0 +1,12 @@
+# fibonacci series!
+#0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 
+num1,num2 = 0 , 1 
+counter=0
+n=int(input('enter yout limit'))
+while counter < n:
+    print(num1,end=" ")
+    c=num1+num2
+    num1=num2
+    num2=c
+    counter=counter+1
+  
