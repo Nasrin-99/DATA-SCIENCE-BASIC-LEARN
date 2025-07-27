@@ -1,0 +1,8 @@
+#factorial of number
+n=int(input('enter yout limit'))
+a=1
+s=1
+while a<=n:
+     s=s*a
+     a=a+1
+print(s)
