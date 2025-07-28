@@ -1,0 +1,4 @@
+def test8(*args):
+    return args
+type(test8())
+test8(1,2,3,4,'fdf','gff')
