@@ -1,0 +1,6 @@
+#sum
+def test5(a,b):
+    return a+b
+x=int(input())
+y=int(input())
+test5(x,y)
