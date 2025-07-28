@@ -1,0 +1,13 @@
+# select only int list under list
+l=[1,2,3,[1,2,3],'dsd','rfr']
+def test7(a):
+    l1=[]
+    for i in a:
+        if type(i) == list:
+              for j in i:
+                   l1.append(j)
+        else:
+            if type(i)== int or type(i)== float:
+                l1.append(i)
+    return l1
+test7(l)
