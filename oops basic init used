@@ -1,0 +1,12 @@
+# class definde 
+class pwskill1 :
+    def __init__ (self,phone_number,email_id,student_id):
+        self.phone_number = phone_number
+        self.email_id = email_id
+        self.student_id = student_id
+    def retun_student_detiles(self):
+        return self.student_id,self.phone_number,self.email_id
+#object create viwi class
+rohan=pwskill1(5354454,'fdf@gmail.com',121)
+#method call
+rohan.retun_student_detiles()
