@@ -1,0 +1,14 @@
+#polymorphism
+class data_science:
+    def syllabus(self):
+        print("this is my data sicence syllabus")
+class web_dev:
+    def syllabus(self):
+        print("this is my web dev syllabus")
+def class_percer(class_object):
+    for i in class_object:
+        i.syllabus()
+data_science = data_science() #object
+web_dev= web_dev()
+class_object=[data_science,web_dev]
+class_percer(class_object)
