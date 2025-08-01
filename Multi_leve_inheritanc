@@ -1,0 +1,11 @@
+                                                  #multi level inheritanc
+class class1:
+    def test_math1(self):
+        return "this is class1"
+class class2:
+    def test_math2(self):
+        return  "this is class2"
+class class3(class1,class2):
+    pass
+obj_class3 = class3()
+obj_class3.test_math1()
