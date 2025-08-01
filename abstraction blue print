@@ -1,0 +1,34 @@
+#blue print of abstraction
+import abc
+class pwskill:
+    @abc.abstractmethod
+    def student_detail(self):
+        pass
+              
+    @abc.abstractmethod
+    def student_assiment(self):
+        pass
+             
+    @abc.abstractmethod
+    def student_marks(self):
+        pass
+# two class is
+class  student_info(pwskill):
+    def student_detail(self):
+        return "this is my pen"
+    def student_assiment(self):
+        return "this is nas"
+class  data_science(pwskill):
+    def student_detail(self):
+        return "this is my pen in data"
+    def student_assiment(self):
+        return "this is nas in data"
+#object call and output
+dms= data_science()
+dms.student_assiment()
+si=student_info()
+si.student_detail()
+    
+             
+
+        
