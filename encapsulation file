@@ -1,0 +1,22 @@
+                                                                 # bank system
+class bank_account:
+    def __init__(self,balance):                                     # encapsulation this fun so that user cont change
+        self.__balance = balance
+    def deposite(self,amount):
+        self.__balance = self.__balance + amount
+    def withdaw(self,amount):
+        if self.__balance >= amount:
+            self.__balance =  self.__balance - amount
+            return True
+        else:
+            return False
+    def get_balance(self):
+        return self.__balance
+                                                                    # object make
+nasrin=bank_account(1000)
+
+nasrin.get_balance()
+nasrin.deposite(100000)
+nasrin.get_balance()
+nasrin.withdaw(20000)
+nasrin.get_balance()
