@@ -1,0 +1,8 @@
+                                              #inharitance
+class test:
+    def test_math(self):
+        return "this is math parent"
+class child_test(test):
+    pass
+child_test_obj = child_test()
+child_test_obj.test_math()
