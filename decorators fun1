@@ -1,0 +1,11 @@
+def deco(func):
+    def inner_deco():
+         print("this is fun  1st test")
+         func()
+         print("this is last fun test")
+    return inner_deco
+
+@deco
+def test1():
+    print(6+7)
+test1()
