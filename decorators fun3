@@ -1,0 +1,15 @@
+import time
+                                     #decorate kore raklam
+def time_test(func):
+    def time_test_inner():
+        start=time.time()
+        func()
+        end = time.time()
+        print(end - start)
+    return time_test_inner
+
+@time_test
+def test3():
+    for i in range(45434554):
+        pass
+test3()
