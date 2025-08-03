@@ -1,0 +1,18 @@
+import time
+                                     #decorate kore raklam
+def time_test(func):
+    def time_test_inner():
+        start=time.time()
+        func()
+        end = time.time()
+        print(end - start)
+    return time_test_inner
+
+def time2(): #jokon decorate kee lagaini 
+    print(34+45)
+time2()
+@time_test
+def time2(): #jokon decorate ke lagiye chi
+    print(34+45)
+time2()
+
